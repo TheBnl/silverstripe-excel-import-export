@@ -41,7 +41,7 @@ class ExcelMemberBulkLoader extends ExcelBulkLoader
         $preview = false,
         $makeRelations = false
     ) {
-        $objID = parent::processRecord($record, $columnMap, $results, $preview);
+        $objID = parent::processRecord($record, $columnMap, $results, $preview, $makeRelations);
 
         $_cache_groupByCode = array();
 
